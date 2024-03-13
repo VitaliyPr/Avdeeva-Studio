@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Студія фотографа</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            if (pageWidth > 2000) {
+                document.documentElement.style.fontSize = '14px';
+            }else if (pageWidth > 992) {
+                let value = (pageWidth * 10 / 1440).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240313205429"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20240313205429">
+
+</head>
+<body >
+  <header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo logo">
+      <span>av</span> <br />
+      studio
+    </a>
+    <div class="menu">
+  <div class="menu__close">
+    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12.3201" y1="0.384111" x2="0.320092" y2="10.3841" stroke="white" />
+      <line x1="0.31466" y1="0.611427" x2="12.4541" y2="10.4417" stroke="white" />
+    </svg>
+  </div>
+  <div class="menu__wrap">
+    <nav class="menu__nav">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#equipment">Обладнання</a></li>
+        <li class="menu__item"><a href="#props">Реквізит</a></li>
+        <li class="menu__item"><a href="#choose">Правила</a></li>
+        <li class="menu__item"><a href="#contact">Контакти</a></li>
+        <li class="menu__item"><a href="studio.html">Відзнято в студії</a></li>
+      </ul>
+      <a href="portfolio.html" class="menu__link">
+        <span>Портфоліо студії</span>
+        <img src="img/arrow.svg" alt="стрілка" loading="lazy" />
+      </a>
+    </nav>
+  </div>
+</div>
+
+    <div class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+  <div class="hero__container">
+    <div class="hero__text">
+      <p>Місце для Вашої творчості та <br class="mob"> ідеальних фото</p>
+      <span></span>
+    </div>
+    <h1 class="hero__title">Avdeeva Studio</h1>
+    <picture>
+      <source media="(max-width: 992px)" srcset="img/main/hero_mob.jpg">
+      <img src="img/main/hero.jpg" alt="Avdeeva Studio" loading="lazy" class="hero__img" />
+    </picture>
+  </div>
+</section>
+
+    <section class="section" id="choose">
+  <div class="section__container pd">
+    <div class="choose">
+      <h2 class="choose__title">Чому обрати нас?</h2>
+      <div class="choose__body">
+        <div class="choose__item choose-item">
+          <div class="choose-item__num">01</div>
+          <h2 class="choose-item__title">Творчий простір</h2>
+          <p class="choose-item__text">
+            Студія площею 125 м² та висотою стелі 5 м з циклорамою для Ваших фото та відео
+          </p>
+        </div>
+        <div class="choose__item choose-item">
+          <div class="choose-item__num">02</div>
+          <h2 class="choose-item__title">ДЕННЕ СВІТЛО</h2>
+          <p class="choose-item__text">
+            Одна велика зала великими панорамними вікнами. <br class="mob-none" />
+            На вікнах присутні рулети
+          </p>
+        </div>
+        <div class="choose__item choose-item">
+          <div class="choose-item__num">03</div>
+          <h2 class="choose-item__title">Професійна техніка</h2>
+          <p class="choose-item__text">
+            Техніка Nunlite, Godox. У наявності бігова доріжка та<br class="mob-none" />
+            подіум який обертається
+          </p>
+        </div>
+        <div class="choose__item choose-item">
+          <div class="choose-item__num">04</div>
+          <h2 class="choose-item__title">Додаткові фони</h2>
+          <p class="choose-item__text">
+            Студія облаштована додатковими фонами,<br class="mob-none" />
+            гримерним столом, відпарювачем та усім необхідним
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+  <div class="section__container">
+    <div class="reservation">
+      <div class="reservation__col">
+        <h2 class="reservation__title">Як забронювати?</h2>
+        <img src="img/main/reservation-img.jpg" alt="Як забронювати?" loading="lazy" class="reservation__img">
+      </div>
+      <div class="reservation__body">
+        <div class="reservation__item reservation-item">
+          <div class="reservation-item__num">01</div>
+          <p class="reservation-item__text">Написати в телеграм для бронювання </p>
+        </div>
+        <div class="reservation__item reservation-item">
+          <div class="reservation-item__num">02</div>
+          <p class="reservation-item__text">Оплатити повну суму протягом 24 год</p>
+        </div>
+        <div class="reservation__item reservation-item">
+          <div class="reservation-item__num">03</div>
+          <p class="reservation-item__text">Надіслати підтвердження оплати</p>
+        </div>
+        <div class="reservation__item reservation-item">
+          <div class="reservation-item__num">04</div>
+          <p class="reservation-item__text">Перенесення та скасування броні за 48 год без втрати коштів</p>
+        </div>
+        <div class="reservation__item reservation-item">
+          <div class="reservation-item__num">05</div>
+          <p class="reservation-item__text">Мінімальне бронювання залу – дві години</p>
+        </div>
+        <div class="reservation__item reservation-item">
+          <div class="reservation-item__num">06</div>
+          <p class="reservation-item__text">За запізнення 
+            чи дострокове завершення зйомки - сума не зменшується</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <section class="section">
+  <div class="section__container pd">
+    <div class="info">
+      <div class="info__item info-item ui accordion" id="equipment">
+        <img src="img/main/equipment.jpg" alt="Обладнання" loading="lazy" class="info-item__picture"/>
+        <div class="info-item__body">
+          <div class="info-item__head title">
+            <h2 class="info-item__title">Обладнання</h2>
+            <div class="info-item__more">
+              <span>Детальніше</span>
+              <img src="img/arrow.svg" alt="arrow" loading="lazy">
+            </div>
+          </div>
+          <ul class="info-item__list content">
+            <li class="info-item__list-item">Спалах Студійний Автономний Godox AD600Pro 600Дж (1шт)</li>
+            <li class="info-item__list-item">Спалах Студійна Godox QT600IIM HSS 600Дж Refurbis (2 шт)</li>
+            <li class="info-item__list-item">Постійне світло Nanlite FS-300 LED AC Monolight (2шт)</li>
+            <li class="info-item__list-item">
+              Nanlite Forza 60B bi-color + проекційна насадка <br class="mob-none"> Nanlite 19° з масками гобо ( 1шт)
+            </li>
+            <li class="info-item__list-item">Димова машина CHAUVET H1200 HURRICANE 1200</li>
+            <li class="info-item__list-item">
+              Софтбокс з сотами Godox SB-FW35160 (35x160см), софтбокс Godox (50x70см)
+            </li>
+            <li class="info-item__list-item">Рефлектори, портретна тарілка</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info__item info-item ui accordion" id="props">
+        <img src="img/main/props.jpg" alt="Реквізит" loading="lazy" class="info-item__picture"/>
+        <div class="info-item__body">
+          <div class="info-item__head title">
+            <h2 class="info-item__title">Реквізит</h2>
+            <div class="info-item__more">
+              <span>Детальніше</span>
+              <img src="img/arrow.svg" alt="arrow" loading="lazy">
+            </div>
+          </div>
+          <ul class="info-item__list content">
+            <li class="info-item__list-item">Паперовий фон</li>
+            <li class="info-item__list-item">Тканинний фон </li>
+            <li class="info-item__list-item">Фрост-рама 2,8х3,5 метрів</li>
+            <li class="info-item__list-item">Меблі</li>
+            <li class="info-item__list-item">Елементи декору</li>
+            <li class="info-item__list-item">Прапори 2 шт</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info__item info-item ui accordion">
+        <img src="img/main/amenities.jpg" alt="зручності" loading="lazy" class="info-item__picture" />
+        <div class="info-item__body">
+          <div class="info-item__head title">
+            <h2 class="info-item__title">зручності</h2>
+            <div class="info-item__more">
+              <span>Детальніше</span>
+              <img src="img/arrow.svg" alt="arrow" loading="lazy">
+            </div>
+          </div>
+          <ul class="info-item__list content">
+            <li class="info-item__list-item">Мобільний столик</li>
+            <li class="info-item__list-item">Вентилятор</li>
+            <li class="info-item__list-item">Кондиціонер</li>
+            <li class="info-item__list-item">Відпарювач</li>
+            <li class="info-item__list-item">Гримерна</li>
+            <li class="info-item__list-item">Теплові гармати</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section" id="contact">
+  <div class="section__container pdb">
+    <div class="contact">
+      <div class="contact__back">
+        <h2 class="contact__title">Як зв’язатися?</h2>
+        <img src="img/main/contact-img.jpg" alt="Як зв’язатися?" loading="lazy" class="contact__picture" />
+      </div>
+      <div class="contact__body">
+        <div class="contact__item contact-item">
+          <h3 class="contact-item__title">Контакти</h3>
+          <p class="contact-item__text">+38 066 427 89 91 </p>
+        </div>
+        <div class="contact__item contact-item">
+          <h3 class="contact-item__title">Адреса</h3>
+          <p class="contact-item__text">Київ, вул. Івана Дзюби 3, 4-й поверх</p>
+        </div>
+        <div class="contact__item contact-item">
+          <h3 class="contact-item__title">Графік роботи</h3>
+          <p class="contact-item__text">
+            Щоденно,без перерв, вихідних та свят з 8.00 до 22.00. Прийом дзвінків з 8:00 до 22:00
+          </p>
+        </div>
+        <div class="contact__item contact-item">
+          <h3 class="contact-item__title">Вартість</h3>
+          <p class="contact-item__text">1000 грн/година. Обладнання входить у вартість</p>
+        </div>
+        <div class="contact__buttons">
+          <a href="#" class="contact__btn btn btn--dark">
+            <span>Написати в Telegram</span>
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z"
+                stroke="white"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="tel:+380664278991" class="contact__btn btn btn--line">
+            <span>Зателефонувати</span>
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.58314 1.27682C4.34377 0.520566 5.59627 0.654941 6.23314 1.50619L7.02189 2.55869C7.54064 3.25119 7.49439 4.21869 6.87877 4.83057L6.73002 4.97932C6.71322 5.04177 6.71151 5.10732 6.72502 5.17057C6.76439 5.42557 6.97752 5.96557 7.87002 6.85307C8.76252 7.74057 9.30627 7.95307 9.56502 7.99307C9.63015 8.00692 9.69765 8.00499 9.76189 7.98744L10.0169 7.73369C10.5644 7.18994 11.4044 7.08807 12.0819 7.45619L13.2756 8.10619C14.2988 8.66119 14.5569 10.0512 13.7194 10.8843L12.8313 11.7668C12.5513 12.0449 12.175 12.2768 11.7163 12.3199C10.585 12.4256 7.94939 12.2906 5.17877 9.53619C2.59314 6.96494 2.09689 4.72244 2.03377 3.61744C2.00252 3.05869 2.26627 2.58619 2.60252 2.25244L3.58314 1.27682ZM5.48314 2.06807C5.16627 1.64494 4.57627 1.61119 4.24377 1.94182L3.26252 2.91682C3.05627 3.12182 2.95752 3.34807 2.97002 3.56432C3.02002 4.44244 3.42002 6.46557 5.84002 8.87182C8.37877 11.3956 10.7231 11.4712 11.6294 11.3862C11.8144 11.3693 11.9981 11.2731 12.17 11.1024L13.0575 10.2193C13.4188 9.86057 13.3394 9.20682 12.8281 8.92932L11.6344 8.27994C11.3044 8.10119 10.9181 8.15994 10.6781 8.39869L10.3938 8.68182L10.0625 8.34932C10.3938 8.68182 10.3931 8.68244 10.3925 8.68244L10.3919 8.68369L10.39 8.68557L10.3856 8.68932L10.3763 8.69807C10.3497 8.72232 10.3213 8.74447 10.2913 8.76432C10.2413 8.79744 10.175 8.83432 10.0919 8.86494C9.92314 8.92807 9.69939 8.96182 9.42314 8.91932C8.88127 8.83619 8.16314 8.46682 7.20877 7.51807C6.25502 6.56932 5.88252 5.85557 5.79877 5.31432C5.75564 5.03807 5.79002 4.81432 5.85377 4.64557C5.88912 4.55073 5.93933 4.46213 6.00252 4.38307L6.02252 4.36119L6.03127 4.35182L6.03502 4.34807L6.03689 4.34619L6.03814 4.34494L6.21814 4.16619C6.48564 3.89932 6.52314 3.45744 6.27127 3.12057L5.48314 2.06807Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__col">
+      <a href="/" class="footer__logo logo">
+        <span>av</span> <br />
+        studio
+      </a>
+      <p class="footer__text">Місце для Вашої творчості та ідеальних фото</p>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__title">Контакти</h3>
+      <a href="mailto:info@gmail.com" class="footer__link">info@gmail.com</a>
+      <p class="footer__link">Київ, вул. Івана Дзюби 3, 4-й поверх</p>
+      <a href="tel:+380664278991" class="footer__link">+38 066 427 89 91</a>
+    </div>
+  </div>
+</footer>
+  <script src="js/plugins/plugins.min.js?_v=20240313205429"></script>
+
+<script src="js/app.min.js?_v=20240313205429"></script>
+</body>
+</html>
