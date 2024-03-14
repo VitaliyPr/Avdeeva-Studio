@@ -1301,6 +1301,11 @@ p {
     bottom: 0.9rem;
   }
 
+  .hero__img {
+    -o-object-position: 38% center !important;
+       object-position: 38% center !important;
+  }
+
   .choose__item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
